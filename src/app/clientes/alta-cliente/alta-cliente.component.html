@@ -1,20 +1,14 @@
-<h2>Alta cliente</h2>
-<p>
-  <span>Nombre:</span> {{cliente.nombre}}
-</p>
-<p>
-  <span>CIF:</span>{{cliente.cif}}
-  
-<p>
-  <span>Dirección:</span>{{cliente.direccion}}
- 
-</p>
-<!-- <p>
-  <span>Grupo:</span>
-  <select [(ngModel)]="cliente.grupo">
-    <option *ngFor="let grupo of grupos" value="{{grupo.id}}">{{grupo.nombre}}</option>
-  </select>
-</p> -->
-<p>
-  <!-- <button (click)="this.nuevoCliente()">Guardar</button> -->
-</p>
+<div class="row" *ngFor="let clientes of cliente">
+  <h2>Alta cliente</h2>
+  <p>
+    <span>Nombre:</span> {{clientes.nombre}}
+  </p>
+  <p>
+    <span>CIF:</span>{{clientes.cif}}
+
+  <p>
+    <span>Dirección:</span>{{clientes.direccion}}
+
+  </p>
+
+</div>

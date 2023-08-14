@@ -10,7 +10,7 @@ export class ClientesService {
   constructor( private httpClient:HttpClient) {
   }
   
-  public getClientes(): Observable<Cliente> {
-    return this.httpClient.get<Cliente>(this.URL+ 'getClientes');
+  public getClientes(): Observable<Cliente[]> {
+    return this.httpClient.get<Cliente[]>(this.URL+ 'getClientes');
   }
 }

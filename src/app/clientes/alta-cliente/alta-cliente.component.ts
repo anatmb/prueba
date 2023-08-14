@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class AltaClienteComponent implements OnInit {
 
 
-  cliente: Cliente = new Cliente("","","","");
+  cliente: Cliente[] = [];
 
   constructor(private clientesService: ClientesService) { 
     
