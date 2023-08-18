@@ -19,4 +19,9 @@ export class AltaClienteComponent implements OnInit {
   ngOnInit(): void {
      this.clientesService.traer().subscribe(data => {this.cliente = data});
   }
+
+  
+
+
+
 }

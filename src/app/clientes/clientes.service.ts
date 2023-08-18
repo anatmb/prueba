@@ -13,4 +13,12 @@ export class ClientesService {
   public traer(): Observable<Cliente[]> {
     return this.httpClient.get<Cliente[]>(this.URL+ 'traer');
   }
+
+  public create(cliente: Cliente): Observable<any>{
+    return this.httpClient.post<any>(this.URL + 'create', cliente)
+  }
+
+  public detail(id: number): Observable<Cliente> {
+    return this.httpClient.get<Cliente>(this.URL + `detail/${id}`)
+    }
 }

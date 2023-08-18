@@ -1,4 +1,4 @@
-
+<!-- 
  <h2>Alta cliente</h2>
 <div class="row" *ngFor="let clientes of cliente">
  
@@ -13,4 +13,31 @@
 
   </p>
 
+</div>
+<button type="button" class="btn btn-dark col-lg-2">
+  Agragar Cliente
+</button>
+<button type="button" class="btn btn-dark col-lg-2">
+  Eliminar Cliente
+</button> -->
+
+<div class="row">
+  <h1>Prueba de Cliente</h1>
+  <button type="button" class="btn btn-dark col-lg-2" routerLink="/nuevocliente">
+    Nueva cliente
+</button>
+  <div class="col-lg-12">
+    <table class="table">
+      <tbody>
+        <tr  *ngFor="let clientes of cliente">
+          <td>{{clientes.nombre}}</td>
+          <td>{{clientes.cif}}</td>
+          <td>{{clientes.direccion}}</td>
+          <td> <button type="button" class="btn btn-dark col-lg-2">
+            Borrar
+        </button></td>
+        </tr>
+      </tbody>
+   </table>
+  </div>
 </div>
